@@ -1,20 +1,22 @@
-# Byte-compiled / cache
+# Ignore dataset folders
+app/Fruits_Vegetables/
+
+# Ignore large model file if needed
+app/Image_Classifier.keras
+
+# Ignore virtual environment or macOS system files
 __pycache__/
-*.py[cod]
+*.pyc
+.DS_Store
 
-# Model files
-*.h5
-*.keras
-
-# Environment files
-.env
-.venv
-env/
-venv/
-*.egg-info/
-
-# Streamlit
+# Ignore Streamlit logs
 .streamlit/
 
-# OS
+# VSCode settings
+.vscode/
+
 .DS_Store
+
+echo "app/Fruits_Vegetables/" >> .gitignore
+echo "app/Image_Classifier.keras" >> .gitignore
+
